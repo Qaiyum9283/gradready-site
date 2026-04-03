@@ -354,36 +354,13 @@
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="contact-inner">
-    <div class="contact-info">
-      <div class="section-label">Get in touch</div>
-      <h3>Have a question? We'd love to hear from you.</h3>
-      <p>Whether you're a student looking for help, a parent exploring options, or a tutor wanting to join our team — fill out the form and we'll get back to you within 24 hours.</p>
-      <div class="contact-detail">
-        <div class="contact-icon">✉️</div>
-        <span>hello@gradready.io</span>
-      </div>
-      <div class="contact-detail">
-        <div class="contact-icon">📍</div>
-        <span>Adelaide, South Australia</span>
-      </div>
-      <div class="contact-detail">
-        <div class="contact-icon">🕐</div>
-        <span>Response within 24 hours</span>
-      </div>
-    </div>
-    <div class="form-wrapper">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeZvxR8KZ_kFCVpQYfocy1jPaZqgpG_xhr4tM7xeKf7v3OgfQ/viewform?embedded=true"
-        height="909"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">
-        Loading…
-      </iframe>
-    </div>
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <div class="section-label">Get in touch</div>
+    <h2 class="section-title">Have a question?</h2>
+    <p class="section-sub" style="margin: 0 auto 2rem;">Whether you're a student, parent, or tutor — we'd love to hear from you. Fill out our form and we'll get back to you within 24 hours.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZvxR8KZ_kFCVpQYfocy1jPaZqgpG_xhr4tM7xeKf7v3OgfQ/viewform" target="_blank" class="btn-primary" style="display: inline-block;">Contact Us →</a>
   </div>
-</section> 
+</section>
 
  
 <!-- CTA -->
@@ -395,20 +372,10 @@
 
 /* CONTACT */
 .contact { background: var(--cream); }
-.contact-inner {
-  max-width: 900px; margin: 0 auto;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
-}
-.contact-info h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
-.contact-info p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; font-weight: 300; margin-bottom: 1.5rem; }
 .contact-detail { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem; }
 .contact-detail span { font-size: 0.88rem; color: var(--text); }
 .contact-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(232,184,75,0.12); border: 1px solid rgba(232,184,75,0.3); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
-.form-wrapper {
-  background: var(--white); border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.06); overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-}
+
 .form-wrapper iframe { display: block; width: 100%; border: none; }
 @media (max-width: 768px) {
   .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
