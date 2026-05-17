@@ -163,6 +163,15 @@
   .cta-btn { display: inline-block; background: var(--navy); color: var(--white); padding: 0.9rem 2.5rem; border-radius: 50px; font-weight: 500; text-decoration: none; transition: all 0.2s; }
   .cta-btn:hover { transform: translateY(-2px); background: var(--navy-mid); }
 
+ /* TUTOR SECTION */
+.timeline { position: relative; padding-left: 2rem; border-left: 2px solid rgba(232,184,75,0.3); }
+.timeline-item { margin-bottom: 2rem; position: relative; }
+.timeline-dot { position: absolute; left: -2.45rem; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: var(--gold); border: 2px solid #fff; box-shadow: 0 0 0 2px var(--gold); }
+.skill-chip { background: #F3F4F6; color: #374151; font-size: 0.72rem; padding: 0.25rem 0.6rem; border-radius: 50px; }
+.skill-chip.gold { background: rgba(232,184,75,0.12); border: 1px solid rgba(232,184,75,0.25); color: var(--gold); }
+.skill-chip.green { background: #ECFDF5; color: #065F46; }
+.tag-pill { background: rgba(232,184,75,0.15); border: 1px solid rgba(232,184,75,0.3); color: #B8881B; font-size: 0.72rem; padding: 0.25rem 0.7rem; border-radius: 50px; }
+
   /* FOOTER */
   footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 1rem; }
   footer .logo { font-size: 1.2rem; }
@@ -177,6 +186,8 @@
     .steps, .plans, .testi-grid { grid-template-columns: 1fr; }
     nav ul { display: none; }
   }
+
+ 
 </style>
 </head>
 <body>
@@ -362,6 +373,156 @@
   </div>
 </section>
 
+ <!-- TUTOR: ABOUT -->
+<section style="background:#fff; padding:5rem 5%;">
+  <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 1.6fr; gap:4rem; align-items:start;">
+    <div>
+      <div style="width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#0D1B2A,#1A2E45); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem; border:4px solid var(--gold);">
+        <span style="font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; color:var(--gold);">AQ</span>
+      </div>
+      <div class="section-label">Your tutor</div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:1.8rem; font-weight:700; color:var(--navy); line-height:1.2; margin-bottom:0.4rem;">Abdul Qaiyum</h2>
+      <p style="font-size:0.88rem; color:var(--muted); margin-bottom:1.5rem;">MSc Business Analytics · BSc Computer Science</p>
+      <div style="display:flex; flex-direction:column; gap:0.6rem;">
+        <div><span class="tag-pill">🎓 Adelaide University</span></div>
+        <div><span class="tag-pill">✈️ Singapore Airlines</span></div>
+        <div><span class="tag-pill">💻 Tech One Global</span></div>
+        <div><span class="tag-pill">🌐 IELTS Band 7.5</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">About me</div>
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:700; color:var(--navy); margin-bottom:1rem; line-height:1.3;">A tech professional who loves teaching</h3>
+      <p style="font-size:0.92rem; color:var(--muted); line-height:1.8; font-weight:300; margin-bottom:1rem;">I'm Abdul — a Computer Science graduate currently completing my Masters in Business Analytics at the University of Adelaide. I've worked as a Software QA trainee at Tech One Global and as a Customer Services professional at Singapore Airlines, giving me a unique blend of technical depth and real-world communication skills.</p>
+      <p style="font-size:0.92rem; color:var(--muted); line-height:1.8; font-weight:300;">I started GradReady because I believe every student deserves clear, patient, and practical guidance — whether that's mastering algebra, writing confidently in English, or getting started with programming.</p>
+      <div style="margin-top:1.75rem;">
+        <a href="tel:+610413490336" style="display:inline-flex; align-items:center; gap:0.6rem; background:var(--gold); color:var(--navy); padding:0.8rem 1.75rem; border-radius:50px; font-weight:500; font-size:0.92rem; text-decoration:none; transition:background 0.2s;">
+          📞 Contact Tutor
+        </a>
+        <p style="font-size:0.78rem; color:var(--muted); margin-top:0.6rem;">+61 0413 490 336 · Replies within 24 hrs</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TUTOR: SKILLS -->
+<section style="background:var(--cream); padding:5rem 5%;">
+  <div style="max-width:900px; margin:0 auto;">
+    <div class="centered" style="margin-bottom:3rem;">
+      <div class="section-label">What I bring</div>
+      <h2 class="section-title">Skills & expertise</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem;">
+      <div class="subject-card" style="text-align:left;">
+        <div style="font-size:1.5rem; margin-bottom:0.75rem;">💻</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.75rem;">Technical</h4>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+          <span class="skill-chip">SQL & Data Analysis</span>
+          <span class="skill-chip">API Testing</span>
+          <span class="skill-chip">MS Excel</span>
+          <span class="skill-chip">Network Troubleshooting</span>
+          <span class="skill-chip">AI & LLMs</span>
+          <span class="skill-chip">Unit Testing</span>
+        </div>
+      </div>
+      <div class="subject-card" style="text-align:left;">
+        <div style="font-size:1.5rem; margin-bottom:0.75rem;">🌐</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.75rem;">Web Development</h4>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+          <span class="skill-chip gold">HTML & CSS</span>
+          <span class="skill-chip gold">JavaScript</span>
+          <span class="skill-chip gold">React</span>
+          <span class="skill-chip gold">GitHub Pages</span>
+          <span class="skill-chip gold">DNS & Hosting</span>
+          <span class="skill-chip gold">Custom Domains</span>
+        </div>
+      </div>
+      <div class="subject-card" style="text-align:left;">
+        <div style="font-size:1.5rem; margin-bottom:0.75rem;">🤝</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.75rem;">Professional</h4>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+          <span class="skill-chip green">Critical Thinking</span>
+          <span class="skill-chip green">Leadership</span>
+          <span class="skill-chip green">Communication</span>
+          <span class="skill-chip green">Problem Solving</span>
+          <span class="skill-chip green">Collaboration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TUTOR: HOW I CAN HELP -->
+<section style="background:var(--navy); padding:5rem 5%;">
+  <div style="max-width:900px; margin:0 auto;">
+    <div class="centered" style="margin-bottom:3rem;">
+      <div class="section-label">Services</div>
+      <h2 class="section-title" style="color:#fff;">How I can help you</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.5);">Whether you need academic tutoring or a professional website built — I've got you covered.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+      <div class="plan">
+        <div style="font-size:1.6rem; margin-bottom:1rem;">📚</div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:700; color:#fff; margin-bottom:0.75rem;">Academic Tutoring</h3>
+        <p style="font-size:0.85rem; color:rgba(255,255,255,0.5); line-height:1.75; font-weight:300; margin-bottom:1.25rem;">1-on-1 sessions tailored to your year level and goals. I break down complex topics into simple, memorable steps.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+          <span class="skill-chip gold">Mathematics</span>
+          <span class="skill-chip gold">English</span>
+          <span class="skill-chip gold">IT & Programming</span>
+          <span class="skill-chip gold">Years 6–12</span>
+        </div>
+      </div>
+      <div class="plan featured">
+        <div class="plan-badge">Also available</div>
+        <div style="font-size:1.6rem; margin-bottom:1rem;">🌐</div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:700; color:#fff; margin-bottom:0.75rem;">Website Building</h3>
+        <p style="font-size:0.85rem; color:rgba(255,255,255,0.5); line-height:1.75; font-weight:300; margin-bottom:1.25rem;">Need a professional website? I build clean, fast, mobile-friendly sites from scratch — no templates, no fluff.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+          <span class="skill-chip gold">Landing pages</span>
+          <span class="skill-chip gold">Portfolio sites</span>
+          <span class="skill-chip gold">Custom domains</span>
+          <span class="skill-chip gold">Free hosting setup</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TUTOR: EXPERIENCE TIMELINE -->
+<section style="background:#fff; padding:5rem 5%;">
+  <div style="max-width:900px; margin:0 auto;">
+    <div class="centered" style="margin-bottom:3rem;">
+      <div class="section-label">Background</div>
+      <h2 class="section-title">Education & experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div style="font-size:0.75rem; color:var(--gold); font-weight:500; margin-bottom:0.3rem;">2024 — Present</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.2rem;">Master of Business Analytics</h4>
+        <p style="font-size:0.82rem; color:var(--muted);">University of Adelaide, Australia</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div style="font-size:0.75rem; color:var(--gold); font-weight:500; margin-bottom:0.3rem;">Jun 2024 — Feb 2026</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.2rem;">Customer Services Assistant — Singapore Airlines (GSA Saimon Global)</h4>
+        <p style="font-size:0.82rem; color:var(--muted);">Airport operations, passenger handling, IT systems (SITA, Amadeus Altea), cross-team coordination.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div style="font-size:0.75rem; color:var(--gold); font-weight:500; margin-bottom:0.3rem;">Aug 2023 — Jan 2024</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.2rem;">Software Dev. Trainee — Tech One Global</h4>
+        <p style="font-size:0.82rem; color:var(--muted);">API testing, unit testing, workflow systems for Banglalink & Basic Bank. Debugging and cross-functional delivery.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div style="font-size:0.75rem; color:var(--gold); font-weight:500; margin-bottom:0.3rem;">Graduated 2023</div>
+        <h4 style="font-size:0.95rem; font-weight:500; color:var(--navy); margin-bottom:0.2rem;">BSc Computer Science & Engineering</h4>
+        <p style="font-size:0.82rem; color:var(--muted);">North South University — CGPA 3.3</p>
+      </div>
+    </div>
+  </div>
+</section>
  
 <!-- CTA -->
 <section class="cta-section">
